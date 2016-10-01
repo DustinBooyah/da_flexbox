@@ -1,0 +1,85 @@
+html {
+  background:#000 url(../img/bg.png)top center no-repeat;
+  background-size:cover;
+}
+body {
+  color:#dedede;
+  margin:auto;
+  font-family:"Helvetica Neue","Segoe UI",sans-serif;
+  max-width:90%;
+  letter-spacing:-0.01em;
+}
+p {
+  font-size:inherit;
+}
+small {
+	font-size:75%;
+}
+a, a:visited {
+  color:#ccc;
+}
+a:hover {
+	color:#fff;
+}
+h1,h2,h3,h4,h5,h6 {
+  color:#ccc;
+  padding:4% 0 0;
+  letter-spacing:-.02em;
+  line-height:1;
+}
+/*FLEXBOX*/
+.site {
+  display:flex;
+  min-height:100vh;
+  flex-direction:column;
+  justify-content: space-around;
+}
+.site-content {
+  flex:1;
+  align-content:center;
+}
+/*POSITIONING*/
+.center {
+  margin:auto;
+  text-align:center
+}
+.text-right {
+	text-align:right;
+}
+/* TEXT COLORS */
+.blue {
+  color:#2193E7;
+}
+.green {
+  color:#95C21C;
+}
+.orange {
+  color:#DE4524;
+}
+.grey_dk {
+	color:#666;
+}
+.white {
+	color:fff;
+}
+.white_dk {
+	color:#ccc;
+}
+/* MEDIA QUERY SMALL-MEDIUM */
+@media (min-width: 24em) {
+  .site-content {
+  	font-size:1.75em;
+  }
+}
+/* MEDIA QUERY MEDIUM-LARGE */
+@media (min-width: 62em) {
+  .site-content {
+  	font-size:3.5em;
+  }
+}
+/* MEDIA QUERY BIG-AF */
+@media (min-width: 110em) {
+  .site-content {
+    font-size:4.5em;
+  }
+}
